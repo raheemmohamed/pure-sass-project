@@ -8,7 +8,7 @@ Live URL [Click Here for Demo](https://raheemmohamed.github.io/pure-sass-project
 
 This is how the user interface looks like
 
-![Landing Page with SASS](https://i.ibb.co/xHWRm64/pure-sass-project-ui.png)
+![Landing Page with SASS](https://i.ibb.co/F000nxV/pure-sass-used-ui.png)
 
 ## Who Am I ?
 
