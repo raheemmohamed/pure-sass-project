@@ -51,7 +51,7 @@ body {
       justify-content: center; } }
   @media (max-width: 600px) {
     .row {
-      width: 50rem; } }
+      width: 60rem; } }
 
 .header {
   height: 80vh;
@@ -149,7 +149,8 @@ body {
   backface-visibility: hidden; }
   @media (max-width: 600px) {
     .card {
-      width: 100% !important; } }
+      width: 100% !important;
+      height: 60rem; } }
   .card:hover {
     -webkit-transform: translateY(-1rem);
     -ms-transform: translateY(-1rem);
@@ -169,6 +170,9 @@ body {
     transform: scale(1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
+    @media (max-width: 600px) {
+      .card__picture {
+        height: 30rem; } }
     .card__picture-box {
       overflow: hidden;
       border-top-left-radius: 2rem;

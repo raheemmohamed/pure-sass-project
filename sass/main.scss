@@ -130,6 +130,7 @@ $color-secondary: #b36a6aa2;
 
   @include respond(phone){
     width: 100% !important;
+    height: 60rem;
   }
 
   &:hover {
@@ -154,6 +155,11 @@ $color-secondary: #b36a6aa2;
     transform: scale(1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+    @include respond(phone) {
+        height: 30rem;
+      }
+
     &-box {
       overflow: hidden;
       border-top-left-radius: 2rem;
