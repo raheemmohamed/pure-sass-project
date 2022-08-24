@@ -10,6 +10,8 @@ This is how the user interface looks like
 
 ![Landing Page with SASS](https://i.ibb.co/3fF440h/pure-sass-landing-page-design.png)
 
+<img src="https://i.ibb.co/3fF440h/pure-sass-landing-page-design.png" width="100%"/>
+
 ## Who Am I ?
 
 I'm Raheem, Software Engineer, Tech Enthusiast and Youtuber. do you want to know more details about me ? [Here is my website](https://inproto.net/raheem)
