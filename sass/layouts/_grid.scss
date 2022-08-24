@@ -1,0 +1,19 @@
+// GRID
+$grid-width: 130rem; 
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: $grid-width;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @include respond(tablet-landscape) {
+      justify-content: center;
+    }
+  @include respond(phone) {
+    width: 50rem;
+  }
+}

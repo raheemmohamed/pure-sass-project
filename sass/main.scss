@@ -1,0 +1,260 @@
+$color-white: #fff;
+$color-light-grey: #eee;
+$color-dark-grey: #777;
+$color-light-black: #333;
+
+$color-primary: #00249ca9;
+$color-secondary: #b36a6aa2;
+
+@import './abstracts/mixins';
+
+@import './base/base';
+
+@import './layouts/grid';
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(to right, $color-secondary, $color-primary),
+    url(../images/bun.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
+  background-position-y: 50%;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+}
+
+.heading {
+  &-title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    display: inline-block;
+    -webkit-background-clip: text !important;
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+    color: transparent;
+  }
+  &-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+      display: block;
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 0.5rem;
+    }
+
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.75rem;
+    }
+  }
+
+  &-secondary {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+  &:active {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75 / 20%);
+  }
+  &--white {
+    background-color: $color-white;
+    color: $color-dark-grey;
+  }
+
+  &--gradient {
+    background: linear-gradient(to left, $color-secondary, $color-primary);
+    color: $color-white;
+  }
+}
+
+.card {
+  background-color: $color-white;
+  width: 35rem;
+  height: 50rem;
+  margin:1rem 2rem;
+  border-radius: 2rem;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75 / 20%);
+  transition: all 0.3s;
+  overflow: hidden;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  @include respond(phone){
+    width: 100% !important;
+  }
+
+  &:hover {
+    -webkit-transform: translateY(-1rem);
+    -ms-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  &:hover &__picture {
+    -webkit-transform: translateZ(0) scale(1.6);
+    transform: translateZ(0) scale(1.6);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: screen;
+    -webkit-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &-box {
+      overflow: hidden;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+
+    &--1 {
+      background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        ),
+        url(../images/bun.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        ),
+        url(../images/bun2.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        ),
+        url(../images/bun3.jpg);
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        ),
+        url(../images/bun4.jpg);
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        ),
+        url(../images/bun5.jpg);
+    }
+
+    &--6 {
+      background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          $color-primary
+        ),
+        url(../images/bun6.jpg);
+    }
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.2rem;
+}
+.margin-bottom-big {
+  margin-bottom: 4rem;
+}
+
+.section-burger-list {
+  padding: 25rem 0 10rem;
+  background-color: $color-light-grey;
+  margin-top: -10rem;
+
+  @include respond(tablet-landscape) {
+    padding: 25rem 0 0 0;
+  }
+
+  @include respond(tablet-portrait) {
+    padding: 25rem 0 0 0;
+  }
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.footer {
+  background-color: $color-light-black;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: $color-white;
+}
